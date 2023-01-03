@@ -16,6 +16,7 @@ ALAT DAN BAHAN
 7) Resistor 330,1K, 10K Ohm (3)
 
 TEORI SINGKAT
+
 ESP32 adalah nama dari mikrokontroler yang dirancang oleh perusahaan yang berbasis di Shanghai, China yakni Espressif Systems. ESP32 menawarkan solusi jaringan WiFi dan BLE. ESP32 menggunakan prosesor dual core yang berjalan di instruksi Xtensa LX16. Selain itu, ESP32 telah mendukung protokol komunikasi seperti I2C, UART dan SPI.
 
 A. ESP32 Capacitive Touch Sensor
@@ -55,4 +56,12 @@ B. Mengakses Sensor DHT 11 (Single Wire / BUS)
 https://user-images.githubusercontent.com/121847212/210312387-5618b1f2-adf6-418b-89b8-b28dbed1bd26.mp4
 
 C. Mengakses Sensor RFID (SPI Communication)
-1.
+1.Install Library MFRC522 dari Library Manager Kemudian buatlah program seperti pada script berikut dekatkan kartu atau Tag RFID ke RFID Reader. Amati dan analisis cara kerja programnya.
+
+https://user-images.githubusercontent.com/121847212/210313084-3e94af8b-4dfd-4202-b087-6a280e11d0d4.mp4
+
+2.Buatlah program agar Tag RFID yang terbaca sebelumya dapat digunakan untuk hak akses. Apabila Tag RFID didekatkan pada Reader, maka LED Hijau akan menyala, servo akan bergerak ke kanan (lalu kembali ke posisi semula setelah 3 detik) dan di Serial Monitor akan tertampil pesan “Akses Diterima, Silahkan Masuk”. Apabila Tag RFID tidak dikenali, maka LED Merah akan menyala, servo tidak bergerak dan di Serial Monitor akan tertampil pesan “Akses Ditolak”. Gunakan Tag RFID lain untuk mencoba.
+
+
+https://user-images.githubusercontent.com/121847212/210313225-045a3065-4765-4fe4-976a-3bfca6411945.mp4
+
